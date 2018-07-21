@@ -1,0 +1,30 @@
+[
+  {
+    "authorID": 1,
+    "name": "janek",
+    "surname": "kowal",
+    "placeOfBirth": "nowa wieś",
+    "removed": false
+  },
+  {
+    "authorID": 2,
+    "name": "mak",
+    "surname": "rak",
+    "placeOfBirth": "ptak",
+    "removed": true
+  },
+  {
+    "authorID": 3,
+    "name": "janek",
+    "surname": "kowal",
+    "placeOfBirth": "nowa wieś",
+    "removed": false
+  },
+  {
+    "authorID": 4,
+    "name": "mak",
+    "surname": "rak",
+    "placeOfBirth": "ptak",
+    "removed": false
+  }
+]
