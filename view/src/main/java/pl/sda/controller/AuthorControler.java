@@ -1,5 +1,6 @@
 package pl.sda.controller;
 
+import lombok.ToString;
 import pl.sda.domain.Author;
 import pl.sda.persisence.AuthorRepository;
 import pl.sda.service.AuthorService;
@@ -22,4 +23,17 @@ public class AuthorControler {
 
         authorService.remove(id);
     }
+    public Author read (Long id)throws  IOException{
+        Author author= authorService.read(id);
+    return author;
+    }
+    public void edit (Author author) throws IOException{
+        authorService.edit(author);
+
+    }
+    public List<Author> viewAll () throws IOException{
+       List <Author> authors = authorService.readALl();
+    return authors;
+    }
+
 }

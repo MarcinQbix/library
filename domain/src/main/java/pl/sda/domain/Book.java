@@ -1,7 +1,15 @@
 package pl.sda.domain;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
+@Getter
+@Setter
+
 public class Book {
-    private Integer id;
+    private Long id;
     private String title;
     private String dateOfPublis;
     private Long isbn;
