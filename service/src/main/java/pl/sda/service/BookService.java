@@ -12,6 +12,7 @@ public class BookService implements IBookService {
 
     @Override
     public void removeBook(Long id) throws IOException {
+        bookRepository.removeBook(id);
 
     }
 
@@ -27,11 +28,24 @@ public class BookService implements IBookService {
 
     @Override
     public void edit(Book book) throws IOException {
+        bookRepository.edit(book);
 
     }
 
     @Override
-    public List readALL() throws IOException {
-        return null;
+    public List <Book> readALl() throws IOException {
+        List  books=bookRepository.readALL();
+
+        return books;
+    }
+
+    @Override
+    public List<Book> readAllAvaliable() throws IOException {
+        List books=bookRepository.readALL();
+        for(int i=0;i<books.size();i++)
+        {
+            System.out.println(books.get(i));
+        }
+        return books;
     }
 }

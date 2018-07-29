@@ -12,7 +12,7 @@ public interface IBookRepository {
     Book read (Long id) throws IOException;
     void edit(Book book) throws IOException;
     List readALL() throws IOException;
-
+    List readALLavaliable() throws IOException;
 
 
 }

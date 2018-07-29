@@ -1,6 +1,10 @@
 package pl.sda.domain;
 
-public enum  BooksType {
+import lombok.ToString;
+
+@ToString
+
+public enum BooksType {
     SCIENCE_FICTION("Scince Fiction"),
     HORROR("Horror"),
     ROMANCE("Romance"),
@@ -9,9 +13,13 @@ public enum  BooksType {
     HISTORY("History"),
     FANTASY("Fantasy");
     private String text;
-    BooksType(String test){
-        this.text=text;
+
+    BooksType(String text) {
+        this.text = text;
     }
-    public String getText(){return text;}
+
+    public String getText() {
+        return text;
+    }
 
 }

@@ -20,6 +20,7 @@ public class Book {
     private long authorID;
     private Long borrowerID;
     private boolean removed;
+    private boolean borrowed;
 
 
 }

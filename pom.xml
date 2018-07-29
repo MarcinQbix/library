@@ -14,6 +14,13 @@
         <module>service</module>
         <module>view</module>
     </modules>
+    <dependencies><dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.3</version>
+        <scope>test</scope>
+    </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
