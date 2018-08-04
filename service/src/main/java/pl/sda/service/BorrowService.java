@@ -5,10 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import pl.sda.domain.Book;
 import pl.sda.domain.Borrow;
 import pl.sda.domain.Borrower;
-import pl.sda.persisence.BookRepository;
-import pl.sda.persisence.IBookRepository;
-import pl.sda.persisence.IBorrowRepository;
-import pl.sda.persisence.IBorrowerRepository;
+import pl.sda.persisence.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,15 +15,10 @@ import java.util.Optional;
 import java.util.logging.Logger;
 
 public class BorrowService implements IBorrowService {
-    private IBookRepository bookRepository;
-    private IBorrowerRepository borrowerRepository;
-    private IBorrowRepository borrowRepository;
-
-    public BorrowService(IBorrowRepository borrowRepository, IBorrowerRepository borrowerRepository, IBookRepository bookRepository) {
-        this.bookRepository = bookRepository;
-        this.borrowerRepository = borrowerRepository;
-        this.borrowRepository = borrowRepository;
-    }
+    LocalDate today = LocalDate.now();
+    private IBookRepository bookRepository = new BookRepository();
+    private IBorrowerRepository borrowerRepository = new BorrowerRepository();
+    private IBorrowRepository borrowRepository = new BorrowRepository();
 
     @Override
     public void borrowBook(Borrow borrow) throws IOException {
@@ -37,8 +29,23 @@ public class BorrowService implements IBorrowService {
 //                LOGGER.error("[Can not find borrower] Id:{)",borrowerId);
 //                return new BorrowerNotFoundException("Can not find borrower");
 //            }
+//        Book book = Optional.ofNullable(bookRepository.read(bookID))
+//                .orElseThrow(()->{
+//                    LOGGER.error("[Can not find item] Id:{}",bookID);
+//                    return new ItemNotFoundException("can not find item");
+//    });
+//        if(book.isBorrow()){
+//            LOGGER.error("[Item has already beeen borrowed] Id :{}",bookID);
+//            throw new IllegalAccessException("Item has already been borrowed");
+//        }
+        Borrower borrower = borrowerRepository.read(borrowerId);
+        Book book = bookRepository.read(bookID);
+        book.setBorrowed(true);
+        borrow.setDateOfBorrow(today);
+        Borrow savedBorrow= borrowRepository.addBorrow(borrow);
+        book.setBorrowerName(borrower.getNameBrrower());
+        bookRepository.edit(book);
 
-        borrow.setDateOfBorrow(LocalDate);
 
 
     }

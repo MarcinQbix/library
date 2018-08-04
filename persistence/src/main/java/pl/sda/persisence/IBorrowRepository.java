@@ -5,5 +5,5 @@ import pl.sda.domain.Borrow;
 import java.io.IOException;
 
 public interface IBorrowRepository {
-    void addBorrow (Borrow borrow) throws IOException;
+    Borrow addBorrow (Borrow borrow) throws IOException;
 }

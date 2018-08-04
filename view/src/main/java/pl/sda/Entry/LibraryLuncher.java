@@ -4,9 +4,11 @@ import lombok.ToString;
 import pl.sda.Printers.LiberaryPrinetr;
 import pl.sda.controller.AuthorControler;
 import pl.sda.controller.BookControler;
+import pl.sda.controller.BorrowControler;
 import pl.sda.domain.Author;
 import pl.sda.domain.Book;
 import pl.sda.domain.BooksType;
+import pl.sda.domain.Borrow;
 import pl.sda.persisence.BookRepository;
 import pl.sda.service.BookService;
 
@@ -25,46 +27,51 @@ public class LibraryLuncher {
 //    }
     public static void main(String[] args) throws IOException {
 
-//        LiberaryPrinetr.printloggedInMenu();
-////        State state = State.START;
-//        Scanner sc = new Scanner(System.in);
-//        int option = sc.nextInt();
-//        switch (option) {
-//            case 1: {
-//                LiberaryPrinetr.printUserMenu();
-//                option = sc.nextInt();
-//                switch (option) {
-//                    case 1: {
-//
-//                    }
-//                    case 2: {
-//
-//                    }
-//                    case 3: {
-//
-//                    }
-//                }
-//
-//            }
-//            case 2: {
-//                LiberaryPrinetr.printLiberaryMenu();
-//                option = sc.nextInt();
-//                switch (option) {
-//                    case 1: {
-//
-//                    }
-//                    case 2: {
-//
-//                    }
-//                    case 3: {
-//
-//                    }
-//                }
-//
-//            }
-//        }
-            AuthorControler authorControler = new AuthorControler();
+        LiberaryPrinetr.printloggedInMenu();
+//        State state = State.START;
+        Scanner sc = new Scanner(System.in);
+        int option = sc.nextInt();
+        switch (option) {
+            case 1: {
+                LiberaryPrinetr.printUserMenu();
+                option = sc.nextInt();
+                switch (option) {
+                    case 1: {
+
+                    }
+                    case 2: {
+
+                    }
+                    case 3: {
+
+                    }
+                }
+
+            }
+            case 2: {
+                LiberaryPrinetr.printLiberaryMenu();
+                option = sc.nextInt();
+                switch (option) {
+                    case 1: {
+
+                    }
+                    case 2: {
+
+                    }
+                    case 3: {
+
+                    }
+                }
+
+            }
+        }
             Scanner scanner = new Scanner(System.in);
+            System.out.println("Wybierz id czytalnika");
+
+            BorrowControler borrowControler = new BorrowControler();
+
+            AuthorControler authorControler = new AuthorControler();
+
 //        authorControler.save("janek","kowal","nowa wieś");
 //        authorControler.save("mak","rak","ptak");
 //        authorControler.remove(Long.valueOf(2));

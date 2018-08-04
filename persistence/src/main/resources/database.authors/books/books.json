@@ -1,1 +1,80 @@
-[{"id":1,"title":"Ogniem i mieczem","dateOfPublis":"23.12.1991","isbn":231531342,"numOfPages":300,"descript":"no i tak","type":"ROMANCE","idBorrower":null,"authorID":4,"borrowerID":null,"removed":false},{"id":1,"title":"Potop","dateOfPublis":"23.12.1991","isbn":231531342,"numOfPages":300,"descript":"no i tak","type":"ROMANCE","idBorrower":null,"authorID":4,"borrowerID":null,"removed":true},{"id":3,"title":"Pan wolll","dateOfPublis":"2.23.3234","isbn":415326,"numOfPages":323,"descript":"blbl","type":"HORROR","idBorrower":null,"authorID":4,"borrowerID":null,"removed":false},{"id":4,"title":"blabla","dateOfPublis":"2315351","isbn":312321321,"numOfPages":4343,"descript":"gafsa","type":"HORROR","idBorrower":null,"authorID":4,"borrowerID":null,"removed":false},{"id":5,"title":"rampama","dateOfPublis":"2413","isbn":23,"numOfPages":213,"descript":"rsasdsa","type":"SCIENCE","idBorrower":null,"authorID":4,"borrowerID":null,"removed":false},{"id":6,"title":"RampPamm","dateOfPublis":"23.23.1123","isbn":2314313,"numOfPages":400,"descript":"rasds","type":"HISTORY","idBorrower":null,"authorID":4,"borrowerID":null,"removed":false}]
+[
+  {
+    "id": 1,
+    "title": "Ogniem i mieczem",
+    "dateOfPublis": "23.12.1991",
+    "isbn": 231531342,
+    "numOfPages": 300,
+    "descript": "no i tak",
+    "type": "ROMANCE",
+    "idBorrower": null,
+    "authorID": 4,
+    "borrowerID": null,
+    "removed": false
+  },
+  {
+    "id": 1,
+    "title": "Potop",
+    "dateOfPublis": "23.12.1991",
+    "isbn": 231531342,
+    "numOfPages": 300,
+    "descript": "no i tak",
+    "type": "ROMANCE",
+    "idBorrower": null,
+    "authorID": 4,
+    "borrowerID": null,
+    "removed": true
+  },
+  {
+    "id": 3,
+    "title": "Pan wolll",
+    "dateOfPublis": "2.23.3234",
+    "isbn": 415326,
+    "numOfPages": 323,
+    "descript": "blbl",
+    "type": "HORROR",
+    "idBorrower": null,
+    "authorID": 4,
+    "borrowerID": null,
+    "removed": false
+  },
+  {
+    "id": 4,
+    "title": "blabla",
+    "dateOfPublis": "2315351",
+    "isbn": 312321321,
+    "numOfPages": 4343,
+    "descript": "gafsa",
+    "type": "HORROR",
+    "idBorrower": null,
+    "authorID": 4,
+    "borrowerID": null,
+    "removed": false
+  },
+  {
+    "id": 5,
+    "title": "rampama",
+    "dateOfPublis": "2413",
+    "isbn": 23,
+    "numOfPages": 213,
+    "descript": "rsasdsa",
+    "type": "SCIENCE",
+    "idBorrower": null,
+    "authorID": 4,
+    "borrowerID": null,
+    "removed": false
+  },
+  {
+    "id": 6,
+    "title": "RampPamm",
+    "dateOfPublis": "23.23.1123",
+    "isbn": 2314313,
+    "numOfPages": 400,
+    "descript": "rasds",
+    "type": "HISTORY",
+    "idBorrower": null,
+    "authorID": 4,
+    "borrowerID": null,
+    "removed": false
+  }
+]

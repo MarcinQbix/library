@@ -21,6 +21,6 @@ public class Book {
     private Long borrowerID;
     private boolean removed;
     private boolean borrowed;
-
+    private String borrowerName;
 
 }
